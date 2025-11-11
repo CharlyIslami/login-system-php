@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background: linear-gradient(180deg, #1e3a8a 0%, #2563eb 45%, #60a5fa 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+h1 {
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p {
+    color: #60a5fa;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #0b2540;
+    background: #bfdbfe;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 30px auto;
+    transition: all 0.5s ease;
+    animation: fade 2s ease 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a:hover {
+    color: white;
+    background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+    transform: translateY(-3px);
+}
+
+
